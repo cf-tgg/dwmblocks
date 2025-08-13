@@ -16,8 +16,12 @@ typedef struct {
 static const Block blocks[] = {
     /*Icon*/        /*Command*/                            /*Update Interval*/    /*Update Signal*/
     {"",       "cat /tmp/recordingicon 2>/dev/null",                0,                      9},
-    /* {"",       "cat /tmp/mpvqicon      2>/dev/null",                0,                     15}, */
+    {"",       "cat /tmp/x2xicon 2>/dev/null",                      0,                     21},
+    {"",       "cat /tmp/msgboxicon 2>/dev/null",                   0,                     19},
+    {"📧",    "sb-msgbox",                                         10,                     28},
+    {" ",     "sb-x2x",                                            0,                      2},
     {"",       "cat /tmp/walfehicon    2>/dev/null",                0,                     16},
+    {"",       "cat /tmp/mpvqicon      2>/dev/null",                0,                     12},
     {"",       "sb-mpvq",                                           0,                     15},
     {"",       "sb-tasks",                                         10,                     26},
     {"",       "sb-music",                                          0,                     11},
@@ -46,4 +50,3 @@ static const Block blocks[] = {
 
 /* Block delimiter. NULL character ('\0') means no delimiter. */
 static const char *delim = " \0";
-
